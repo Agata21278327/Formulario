@@ -7,6 +7,45 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form> 
+        <fieldset>  <legend>Cadastro do Produto</legend>
+            <label for="itext">Produto:</label>
+            <br>
+            <input type="text" id="iprodut" name="tproduto" placeholder="Digite o nome do produto">
+            <br>
+            <label for="idate">Data Cadastro</label>
+            <br>
+            <input type="date" id="idata" name="ddata">
+            <br>
+            <label for="icategorie">Categoria</label>
+            <br>
+            <select name="scategorie" id="icategorie">
+                <option value="">Livros</option>
+                <option value:="C">Cadernos</option>
+            </select>
+            <br>
+            <label for="ipeso">Peso (Kg):</label>
+            <br>
+            <input type="number" id="ipeso" name="npeso" placeholder="Informe seu peso">
+            <br>
+            <p>Situação:</p>
+            <input type="radio" name="rtipo" id="itpnovo" value="N">
+            <label for="itpnovo">Novo</label>
+
+            <input type="radio" name="rtipo" id="itpusado" value="U">
+            <label for="itpusado">Usado</label>
+            <br>
+            <label for="ides">Descrição</label>
+            <br>
+            <textarea name="txtdes" id="idescricao" placeholder="Digite uma descrição sobre seu produto" cols="30" rows="10"></textarea>
+            <br>
+            <label for="iava">Avaliação (0-10)</label>
+            <input type="range" id="iava" name="rava" min="0" max="10">
+            <br>
+            <input type="submit" id="ienviar" name="senviar" value="Enviar">
+            <input type="reset" id="ilimpar" name="rlimpar" value="Limpar"> 
+        </fieldset>
+    </form>
+   
 </body>
 </html>
