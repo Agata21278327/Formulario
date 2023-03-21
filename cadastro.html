@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Cadastro de Usuário</legend>
+            <label for="inome">Nome:</label>
+            <bR>
+            <input type="text" id="iname" name="nnome" placeholder="Digite seu nome">
+            <br>
+            <label for="idata">Data nascimento:</label>
+            <bR>
+            <input type="date" id="idata" name="ddata">
+            <br>
+            <label for="imail">E-mail:</label>
+            <br>
+            <input type="email" id="Imail" name="Memail" placeholder="seuemail@seudominio.com.br">
+            <br>
+            <label>Confirmar E-mail:</label>
+            <br>
+            <input type="email" id="Icmail" name="Mcmail" placeholder="Confirme seu E-mail">
+            <br>
+
+            <label for="isexo">Sexo:</label>
+            <select name="ssexo" id="isexo">
+                <option value="M">Masculino</option>
+                <option value="F" selected>Feminino</option>
+                <option value="N">Não-binário</option>
+            </select>
+
+            <br>
+            <label>Tipo:</label>
+            <input type="radio" name="rtipo" id="itpusurio" value="U">
+            <label for="itpusuario">Usuário</label>
+
+            <input type="radio" name="rtipo" id="itpadmin" value="A">
+            <label for="itpadmin">Admin</label>
+            <br>
+            <br>
+            <label for="ivoce">Fale sobre você</label>
+            <br>
+            <textarea name="txtvoce" id="ivoce" placeholder="Digite um pouco sobre você" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
